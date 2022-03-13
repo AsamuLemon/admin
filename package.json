@@ -1,0 +1,28 @@
+{
+  "name": "admin",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "core-js": "^3.8.3",
+    "element-plus": "^2.0.4",
+    "pinia": "^2.0.11",
+    "sass": "^1.49.9",
+    "tiny-emitter": "^2.1.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.8",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/cli-plugin-babel": "^5.0.1",
+    "@vue/cli-service": "^5.0.1",
+    "vite": "^2.8.0"
+  }
+}
