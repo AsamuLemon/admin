@@ -1,78 +1,10 @@
-import 'element-plus/dist/index.css';
-import {
-    ElAffix,
-    ElSkeleton,
-    ElBreadcrumb,
-    ElBreadcrumbItem,
-    ElScrollbar,
-    ElSubMenu,
-    ElButton,
-    ElCol,
-    ElRow,
-    ElSpace,
-    ElDivider,
-    ElCard,
-    ElDropdown,
-    ElDialog,
-    ElMenu,
-    ElMenuItem,
-    ElDropdownItem,
-    ElDropdownMenu,
-    ElIcon,
-    ElInput,
-    ElForm,
-    ElFormItem,
-    ElLoading,
-    ElPopover,
-    ElPopper,
-    ElTooltip,
-    ElDrawer,
-    ElPagination,
-    ElAlert,
-    ElRadioButton,
-    ElRadioGroup,
-    ElInfiniteScroll,
-} from 'element-plus';
+import 'element-plus/dist/index.css'
+import locale from 'element-plus/lib/locale/lang/zh-cn'
+import ElementUI from 'element-plus'
 
-const components = [
-    ElAffix,
-    ElSkeleton,
-    ElBreadcrumb,
-    ElBreadcrumbItem,
-    ElScrollbar,
-    ElSubMenu,
-    ElButton,
-    ElCol,
-    ElRow,
-    ElSpace,
-    ElDivider,
-    ElCard,
-    ElDropdown,
-    ElDialog,
-    ElMenu,
-    ElMenuItem,
-    ElDropdownItem,
-    ElDropdownMenu,
-    ElIcon,
-    ElInput,
-    ElForm,
-    ElFormItem,
-    ElPopover,
-    ElPopper,
-    ElTooltip,
-    ElDrawer,
-    ElPagination,
-    ElAlert,
-    ElRadioButton,
-    ElRadioGroup,
-];
-
-const plugins = [ElLoading, ElInfiniteScroll];
 export function setupElementPlus(app) {
-    components.forEach((component) => {
-        app.use(component);
-    });
-    plugins.forEach((plugin) => {
-        app.use(plugin);
-    });
+    app.use(ElementUI,{locale})
+    // components.forEach((component) => {
+    //     app.use(component,{ locale })
+    // });
 }

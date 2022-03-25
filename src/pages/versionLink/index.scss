@@ -1,0 +1,27 @@
+.content-box{
+    .box-header{
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        .left-header{
+            width: 30%;
+            display: flex;
+        }
+        .right-header{
+            display: flex;
+            width: 50%;
+            .nickInput{
+                width: 150px;
+            }
+            .version-select{
+                width: 120px;
+            }
+            .deadline-input{
+                width: 150px;
+                margin-left: 50px;
+            }
+        }
+        
+    }
+}

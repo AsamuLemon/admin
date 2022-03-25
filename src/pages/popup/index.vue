@@ -1,11 +1,9 @@
 <template>
-    <router-view />
+  <router-view></router-view>
 </template>
-
-<script setup>
-
+<script lang='ts' setup>
+ 
 </script>
-
-<style>
-
+<style lang='sass' scoped>
+ 
 </style>

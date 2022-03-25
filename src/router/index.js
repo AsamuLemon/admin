@@ -3,17 +3,17 @@ import { routes } from './routes'
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
+  routes
 })
 
-// router.beforeEach((to, from, next) => {
-//   if (to.name !== 'login' && !sessionStorage.getItem('token')) {
-//     next({
-//       name: 'login',
-//     })
-//   } else {
-//     next()
-//   }
-// })
+router.beforeEach((to, from, next) => {
+  if (to.path !== '/login' && !sessionStorage.getItem('token')) {
+    next({
+      path: '/login',
+    })
+  } else {
+    next()
+  }
+})
 
 export default router

@@ -2,15 +2,20 @@
   "name": "admin",
   "private": true,
   "version": "0.0.0",
+  "author": "jianpan <1275849631@qq.com>",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "node release/index.js"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
     "axios": "^0.26.0",
     "core-js": "^3.8.3",
-    "element-plus": "^2.0.4",
+    "element-plus": "^2.1.4",
+    "moment": "^2.29.1",
+    "normalize.css": "^8.0.1",
     "pinia": "^2.0.11",
     "sass": "^1.49.9",
     "tiny-emitter": "^2.1.0",
